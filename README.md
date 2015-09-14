@@ -6,7 +6,7 @@ You need [Node.js and npm](https://nodejs.org/). You should also have git instal
 
 Clone the repository (or download the ZIP file)
 
-`git clone https://github.com/belohlavek/phaser-es6-boilerplate.git`
+`git clone https://github.com/MetalPhaser/MetalPhaserStub.git`
 
 Install dependencies
 
