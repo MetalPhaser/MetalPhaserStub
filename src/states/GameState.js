@@ -1,5 +1,5 @@
 import Config from '../config/game-config';
-import Keyboard from '../utils/Keyboard';
+import Keyboard from '../utils/MetalKeyboard';
 
 
 class GameState extends Phaser.State {
