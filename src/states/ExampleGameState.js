@@ -23,11 +23,10 @@ class GameState extends Phaser.State {
 	}
 
 	preload() {
+		this._origStageBackgroundColor       = this.game.stage.backgroundColor;
 		this.game.stage.backgroundColor      = '#85b5e1';
-		this.game.load.baseURL               = 'http://examples.phaser.io/assets/';
-		this.game.load.crossOrigin           = 'anonymous';
-		this.game.load.image('player', 'sprites/phaser-dude.png');
-		this.game.load.image('platform', 'sprites/platform.png');
+		this.game.load.image('player', 'images/tests/phaser-dude.png');
+		this.game.load.image('platform', 'images/tests/platform.png');
 	}
 
 	create() {
@@ -57,7 +56,9 @@ class GameState extends Phaser.State {
 
 	}
 
-	shutdown() {}
+	shutdown() {
+		this.game.stage.backgroundColor     = this._origStageBackgroundColor;
+	}
 
 	update() {
 		this.game.physics.arcade.collide(this.player, this.platforms);
