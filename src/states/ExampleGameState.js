@@ -26,7 +26,7 @@ class GameState extends Phaser.State {
 		this._origStageBackgroundColor       = this.game.stage.backgroundColor;
 		this.game.stage.backgroundColor      = '#85b5e1';
 		this.game.load.image('player', 'images/tests/phaser-dude.png');
-		this.game.load.image('platform', 'images/tests/platform.png');
+		this.game.load.image('platform', 'images/tests/green_rectangle.png');
 	}
 
 	create() {
